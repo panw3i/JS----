@@ -4,33 +4,36 @@
   <title> 事件</title>  
   <script type="text/javascript">
    function count(){
-       var txt1 = document.getElementById("txt1").value;  
+       var txt1 = document.getElementById("txt1"); 
+       var a = parseInt(txt1.value);
+       alert(a);
     //获取第一个输入框的值
    		//alert(txt1.value);
     var txt2 = document.getElementById("txt2").value;
+    var b = parseInt(txt2.value);
 	//获取第二个输入框的值
 	//获取选择框的值
     var select = document.getElementById("select").value;
-    var fruit = document.getElementById("fruit").value;
+    var c= '';
 	//获取通过下拉框来选择的值来改变加减乘除的运算法则  
     switch(select){
         case "+":
-            fruit = txt1+txt2;
-            alert(fruit);
+           c= a + b;
+            alert(c);
             break;
         case "-":
-            fruit = txt1-txt2;
+            c = a - b;
             break;
         case "*":
-            fruit = txt1*txt2;
+           c = a * b;
             break;
         case "/":
-            fruit = txt1/txt23;
+           c = a / b;
             break;
             
     }
     //设置结果输入框的值 
-    
+     document.getElementById("fruit").value =  c;
    }
    
  
