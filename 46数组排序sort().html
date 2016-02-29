@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Array对象 </title>
+<script type="text/javascript">
+   function sortNum(a,b) {
+       return a-b
+
+   }//sort()里面为空时，默认使用unicode编码，顺序是A-Z，1-9
+var myarr = new Array("80","16","50","6","100","1");
+document.write(myarr.sort(sortNum));
+
+//若返回值<=-1，则表示 A 在排序后的序列中出现在 B 之前。
+//若返回值>-1 && <1，则表示 A 和 B 具有相同的排序顺序。
+//若返回值>=1，则表示 A 在排序后的序列中出现在 B 之后。
+</script>
+</head>
+
+<body>
+</body>
+</html>
