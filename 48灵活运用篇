@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var scoreArr = scoreStr.split(';').join(':').split(':');
+
+var sumInt = 0;
+
+var j = 0;
+
+for(var i=0;i<=scoreArr.length;i++){
+
+  if(!isNaN(scoreArr[i])){
+
+    sumInt += parseInt(scoreArr[i]);
+
+    j++;
+
+  }
+
+}
+
+document.write(Math.round(sumInt/j));
+		</script>
+	</body>
+</html>
