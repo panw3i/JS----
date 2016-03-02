@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var num =0;
+			function start(){
+				
+				num +=1;
+				document.getElementById("value").value = num;
+			}
+			
+			function stop(){
+				clearTimeout("");
+			}
+			
+		</script>
+		
+		<input type="text" name="value" id="value" value=""" />
+		 <input type="button" name="start" id="start" value="start" onclick="setTimeout("start()",1000)/>
+		 <input type="button" name="stop" id="stop" value="stop" onclick="stop()" />
+	</body>
+</html>
